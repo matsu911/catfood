@@ -71,3 +71,6 @@
   ([task]
    (execute! task ::no-args)))
 
+(defmacro do-async
+  [& body]
+  `(execute! (new-task (fn [] ~@body))))
