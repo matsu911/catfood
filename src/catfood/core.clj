@@ -1,4 +1,5 @@
 (ns catfood.core
+  (:use [neko.ui.mapping :only [defelement]])
   (:import clojure.lang.IFn
            java.util.concurrent.TimeUnit
            catfood.threading.AsyncTask))
@@ -74,3 +75,7 @@
 (defmacro do-async
   [& body]
   `(execute! (new-task (fn [] ~@body))))
+
+(defelement :web-view
+  :classname android.webkit.WebView
+  :inherits :view)
