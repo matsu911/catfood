@@ -1,4 +1,4 @@
-(defproject catfood "0.1.1"
+(defproject catfood "0.1.2-SNAPSHOT"
   :description "Catfood is a suppliment for Neko"
   :url "http://github.com/matsu911/catfood"
   :license {:name "Eclipse Public License"
